@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const ImageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "ENTER YOUR API KEY HERE FROM OPENAI API SITE"
+const OPENAI_API_KEY = "sk-proj-nn1QtMTMJQWEmnzHWQoYT3BlbkFJwgCbbyIawhql1w3zbOmQ"
 
 async function generateAiImages(userPrompt, userImageQuantity) {
 
@@ -28,7 +28,7 @@ async function generateAiImages(userPrompt, userImageQuantity) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${OPENAI_API_KEY}`
+                "Authorization": `Bearer ${sk-proj-nn1QtMTMJQWEmnzHWQoYT3BlbkFJwgCbbyIawhql1w3zbOmQ}`
             },
             body: JSON.stringify({
                 prompt: userPrompt,
